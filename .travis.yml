@@ -3,5 +3,9 @@ language:
 
 osx_image: xcode8.3
 
+xcode_project: hello-world.xcodeproj
+xcode_scheme: hello-world
+xcode_sdk: iphonesimulator10.3
+
 script:
   cd hello-world && xcodebuild -project hello-world.xcodeproj -target hello-world -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build
