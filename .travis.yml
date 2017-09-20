@@ -1,6 +1,7 @@
-language: objective-c
+language:
+  objective-c
 
+osx_image: xcode8.3.3
 
 script:
-  cd hello-world
-  xcodebuild -project hello-world.xcodeproj -target hello-world -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  cd hello-world && xcodebuild -project hello-world.xcodeproj -target hello-world -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build
