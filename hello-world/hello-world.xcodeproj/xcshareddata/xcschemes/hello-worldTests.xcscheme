@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -9,12 +9,12 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47AC06E41F7B7A9B00DBE435"
+               BlueprintIdentifier = "61BBC0CE1F7B82B4006E82E0"
                BuildableName = "hello-world.app"
                BlueprintName = "hello-world"
                ReferencedContainer = "container:hello-world.xcodeproj">
@@ -32,13 +32,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47AC06FA1F7B7A9B00DBE435"
+               BlueprintIdentifier = "61BBC0E21F7B82B4006E82E0"
                BuildableName = "hello-worldTests.xctest"
                BlueprintName = "hello-worldTests"
                ReferencedContainer = "container:hello-world.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "61BBC0CE1F7B82B4006E82E0"
+            BuildableName = "hello-world.app"
+            BlueprintName = "hello-world"
+            ReferencedContainer = "container:hello-world.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -55,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "47AC06E41F7B7A9B00DBE435"
+            BlueprintIdentifier = "61BBC0CE1F7B82B4006E82E0"
             BuildableName = "hello-world.app"
             BlueprintName = "hello-world"
             ReferencedContainer = "container:hello-world.xcodeproj">
@@ -73,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "47AC06E41F7B7A9B00DBE435"
+            BlueprintIdentifier = "61BBC0CE1F7B82B4006E82E0"
             BuildableName = "hello-world.app"
             BlueprintName = "hello-world"
             ReferencedContainer = "container:hello-world.xcodeproj">

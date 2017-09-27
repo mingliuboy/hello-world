@@ -2,8 +2,8 @@
 //  hello_worldUITests.swift
 //  hello-worldUITests
 //
-//  Created by 张静 on 2017/9/27.
-//  Copyright © 2017年 张静. All rights reserved.
+//  Created by liu ming on 2017/9/27.
+//  Copyright © 2017年 liu ming. All rights reserved.
 //
 
 import XCTest
