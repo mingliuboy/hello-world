@@ -2,8 +2,8 @@
 //  hello_worldTests.swift
 //  hello-worldTests
 //
-//  Created by 张静 on 2017/9/27.
-//  Copyright © 2017年 张静. All rights reserved.
+//  Created by liu ming on 2017/9/27.
+//  Copyright © 2017年 liu ming. All rights reserved.
 //
 
 import XCTest
@@ -23,6 +23,9 @@ class hello_worldTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
+        print("==============================================")
+        print("This is an example of a functional test case.")
+        print("==============================================")
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
