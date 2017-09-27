@@ -4,7 +4,7 @@ language:
 osx_image: xcode8.3
 
 install: 
- - ruby update
+ - rvm reinstall ruby-2.3.0
 
 xcode_project: hello-world/hello-world.xcodeproj
 # xcode_scheme: hello-world
