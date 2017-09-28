@@ -1,7 +1,7 @@
 language:
   objective-c
 
-osx_image: xcode8.3
+osx_image: xcode9
 
 install: 
  - rvm reinstall ruby-2.3.0
