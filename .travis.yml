@@ -7,8 +7,6 @@ install:
  - rvm reinstall ruby-2.3.0
 
 xcode_project: hello-world/hello-world.xcodeproj
-# xcode_scheme: hello-world
-# xcode_sdk: iphonesimulator10.3
 
 script: ./script/hello-worldBuild.sh
   
