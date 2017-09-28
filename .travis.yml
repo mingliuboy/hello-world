@@ -3,8 +3,8 @@ language:
 
 osx_image: xcode9
 
-install: 
- - rvm reinstall ruby-2.3.0
+# install: 
+# - rvm reinstall ruby-2.3.0
 
 xcode_project: hello-world/hello-world.xcodeproj
 
