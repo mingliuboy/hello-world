@@ -26,6 +26,9 @@ class hello_worldTests: XCTestCase {
         print("==============================================")
         print("This is an example of a functional test case.")
         print("==============================================")
+        let userTop: NSInteger = 1
+        let isView = AppDelegate.userCanEatAppleAtIndex(index: userTop)
+        print("isView: \(isView)")
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
