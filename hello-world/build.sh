@@ -6,7 +6,7 @@ MWProjectName="hello-world"
 #scheme Name
 MWScheme="hello-world"
 #Release or Debug
-MWConfiguration="Debug"
+MWConfiguration="Release"
 #Date
 MWDate=`date +%Y%m%d_%H%M`
 # get current path
@@ -35,12 +35,37 @@ archive \
 -scheme "$MWScheme" \
 -configuration "$MWConfiguration" \
 -archivePath "$MWBuildDir/$MWProjectName" \
--derivedDataPath "$MWBuildTempDir"
+-derivedDataPath "$MWBuildTempDir" \
+
+ipa_path="$MWBuildDir/$MWProjectName$MWDate"
 
 #export ipa
 xcodebuild -exportArchive \
 -archivePath "$MWBuildDir/$MWProjectName.xcarchive" \
--exportPath "$MWBuildDir/$MWProjectName$MWDate" \
+-exportPath $ipa_path \
 -exportOptionsPlist "$MWWorkspace/$MBPlistName"
 
 echo $MWBuildDir
+
+# config hockey app
+STATUS="2"
+
+NOTIFY="1"
+
+RELEASE_NOTES="this upload ipa to hockey Test"
+
+ZIPPED_DSYM=""
+API_TOKEN="108588c841334cc084ad92067075de09"
+
+# Deploy
+cd $ipa_path
+
+echo $ipa_path
+
+pwd
+
+ls -al
+
+# curl -F "status=$STATUS" -F "notify=$NOTIFY" -F "notes=$RELEASE_NOTES" -F "notes_type=0" -F "ipa=@$BUILD_FILE_NAME.ipa" -F "dsym=@$ZIPPED_DSYM" -H "X-HockeyAppToken:$API_TOKEN" https://rink.hockeyapp.net/api/2/apps/upload
+curl -F "status=$STATUS" -F "notify=$NOTIFY" -F "notes=$RELEASE_NOTES" -F "notes_type=0" -F "ipa=@$MWProjectName.ipa" -H "X-HockeyAppToken:$API_TOKEN" https://rink.hockeyapp.net/api/2/apps/upload
+
